@@ -33,7 +33,7 @@ test.describe('TodoMVC Tests', () => {
             console.log(todolist);
             // Verify that the list contains the correct todos
            await todopage.verifyTodos(TODO_ITEMS);   
-           await page.screenshot({ path: 'screenshots/todo_Added.png', fullPage: true });
+           await page.screenshot({ path: 'test-results/screenshots/todo_Added.png', fullPage: true });
 
            const activeTodoCount = await todopage.getActiveTodoCount();
            expect(activeTodoCount).toBe(3); // 3 active todos remaining
@@ -52,7 +52,7 @@ test.describe('TodoMVC Tests', () => {
             
 
         // Take a screenshot after marking the todo as completed
-        await page.screenshot({ path: 'screenshots/todo_completed.png', fullPage: true });
+        await page.screenshot({ path: 'test-results/screenshots/todo_completed.png', fullPage: true });
 
         await todopage.deleteTodos();
 
@@ -60,7 +60,7 @@ test.describe('TodoMVC Tests', () => {
         const todoCount = await page.locator('.todo-list li').count();
         expect(todoCount).toBe(0); // The list should be empty after deletion
 
-        await page.screenshot({ path: 'screenshots/todo_completedanddeleted.png', fullPage: true });
+        await page.screenshot({ path: 'test-results/screenshots/todo_completedanddeleted.png', fullPage: true });
 
 
             
@@ -81,7 +81,7 @@ test.describe('TodoMVC Tests', () => {
            expect(todopage.getTodosEmptyCount) === 0;
             await page.screenshot({ path: 'screenshots/todo_deletedonebyone.png', fullPage: true });
         });
-        test.only('should clear completed todos', async ({ page }) => {
+        test('should clear completed todos', async ({ page }) => {
             const todopage = new PageTodo(page);
             await todopage.addTodo('Walk the dog');
             await todopage.completeTodo(0);
