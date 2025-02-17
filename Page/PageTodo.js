@@ -7,7 +7,7 @@ class PageTodo {
         this.todoLabel = page.locator('.todo-list li label');
         this.todoDestroy = page.locator('.todo-list li .destroy');
         this.todoCount = page.locator('.todo-count');
-        //this.clearCompleted = '.clear-completed';
+        this.clearCompleted = page.locator('.clear-completed');
         //this.filterAll = 'text=All';
         //this.filterActive = 'text=Active';
        // this.filterCompleted = 'text=Completed';
@@ -73,7 +73,9 @@ await toggle.check(); // Check the toggle to mark as completed
         await this.page.waitForTimeout(500); // Optional: Add a small delay for stability
     }
 }
-
+async clearCompletedItem() {
+    await this.clearCompleted.click();
+}
 
 }
 module.exports = { PageTodo };

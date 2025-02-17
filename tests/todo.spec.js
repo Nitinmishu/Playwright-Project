@@ -67,7 +67,7 @@ test.describe('TodoMVC Tests', () => {
         });
 
 
-        test.only('Verify the list of TODOS added are deleted one by one', async ({ page }) => {
+        test('Verify the list of TODOS added are deleted one by one', async ({ page }) => {
             const todopage = new PageTodo(page);
             await todopage.addTodo('Buy groceries');
             await todopage.addTodo('Walk the dog');
@@ -80,6 +80,13 @@ test.describe('TodoMVC Tests', () => {
            await todopage.deleteTodos();
            expect(todopage.getTodosEmptyCount) === 0;
             await page.screenshot({ path: 'screenshots/todo_deletedonebyone.png', fullPage: true });
+        });
+        test.only('should clear completed todos', async ({ page }) => {
+            const todopage = new PageTodo(page);
+            await todopage.addTodo('Walk the dog');
+            await todopage.completeTodo(0);
+            await todopage.clearCompletedItem();
+            expect(todopage.getTodosEmptyCount) === 0;
         });
 
         
