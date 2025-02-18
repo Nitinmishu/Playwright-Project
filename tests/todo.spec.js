@@ -24,7 +24,7 @@ test.describe('TodoMVC Tests', () => {
 
         test('Verify list of Item getting added for TODO and displayed',async ({ page }) => {
 
-           const TODO_ITEMS = ['save the world', 'go back in time', 'learn C'];
+           const TODO_ITEMS = ['start learning Java', 'Makes Presentation for the Review', 'Add the new Scenario before tomorrow'];
            //const todopage = new PageTodo(page);
            for (const todo of TODO_ITEMS) {
             await todopage.addTodo(todo);
@@ -44,7 +44,7 @@ test.describe('TodoMVC Tests', () => {
         
         test('Verify that a todo can be marked as complete and deleted.', async ({ page }) => {
             const todopage = new PageTodo(page);
-            await todopage.addTodo('Read a book');
+            await todopage.addTodo('Start reading a new Book');
             await todopage.completeTodo(0);
 
             const activeTodoCount = await todopage.getActiveTodoCount();
@@ -69,9 +69,9 @@ test.describe('TodoMVC Tests', () => {
 
         test('Verify the list of TODOS added are deleted one by one', async ({ page }) => {
             const todopage = new PageTodo(page);
-            await todopage.addTodo('Buy groceries');
-            await todopage.addTodo('Walk the dog');
-            await todopage.addTodo('Read a book');
+            await todopage.addTodo('start learning Java');
+            await todopage.addTodo('Makes Presentation for the Review');
+            await todopage.addTodo('Add the new Scenario before tomorrow');
             // Verify the count
            // Get the count of active todos
              const activeTodoCount = await todopage.getActiveTodoCount();
@@ -83,7 +83,7 @@ test.describe('TodoMVC Tests', () => {
         });
         test('should clear completed todos', async ({ page }) => {
             const todopage = new PageTodo(page);
-            await todopage.addTodo('Walk the dog');
+            await todopage.addTodo('Add the new Scenario before tomorrow');
             await todopage.completeTodo(0);
             await todopage.clearCompletedItem();
             expect(todopage.getTodosEmptyCount) === 0;
