@@ -14,6 +14,7 @@ npm install
 Run the following command to install Playwright, Cucumber, and related tools:
 
 npm init -y  # Initialize package.json if not done
+
 npm install --save-dev @playwright/test @cucumber/cucumber playwright chai
 
 
