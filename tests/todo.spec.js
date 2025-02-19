@@ -13,11 +13,15 @@ test.describe('TodoMVC Tests', () => {
 
         test('Enter the new TODO and Verify added and deleted',async ({ page }) => {
             //const todopage = new PageTodo(page);
-            await todopage.addTodo('Meeting John at 3:30 GMT'); // Add TODO to the list
+            const todoText = 'Meeting John at 3:30 GMT';
+            await todopage.addTodo(todoText); // Add TODO to the list
+            
             // Verify the text using different methods
-            await expect(page.locator("label[data-testid='todo-item-label']")).toHaveText('Meeting John at 3:30 GMT');
-            await page.hover("label[data-testid='todo-item-label']");
-            await page.locator('.destroy').click();
+            await todopage.verifyTodos([todoText]);  
+            
+            await todopage.deleteTodos();
+            // Verify the TODO list is empty
+            expect(await todopage.getTodosEmptyCount()); // 0 active todos remaining
             
 
         });
@@ -57,8 +61,7 @@ test.describe('TodoMVC Tests', () => {
         await todopage.deleteTodos();
 
         // Assert that the todo list is empty after deleting
-        const todoCount = await page.locator('.todo-list li').count();
-        expect(todoCount).toBe(0); // The list should be empty after deletion
+         expect(await todopage.getTodosEmptyCount()); // 0 active todos remaining
 
         await page.screenshot({ path: 'test-results/screenshots/todo_completedanddeleted.png', fullPage: true });
 
@@ -78,7 +81,9 @@ test.describe('TodoMVC Tests', () => {
            expect(activeTodoCount).toBe(3); // 3 active todos remaining
             // Delete all todos one by one
            await todopage.deleteTodos();
-           expect(todopage.getTodosEmptyCount) === 0;
+            // Verify the TODO list is empty
+            expect(await todopage.getTodosEmptyCount()); 
+          
             await page.screenshot({ path: 'screenshots/todo_deletedonebyone.png', fullPage: true });
         });
         test('should clear completed todos', async ({ page }) => {
@@ -86,8 +91,12 @@ test.describe('TodoMVC Tests', () => {
             await todopage.addTodo('Add the new Scenario before tomorrow');
             await todopage.completeTodo(0);
             await todopage.clearCompletedItem();
-            expect(todopage.getTodosEmptyCount) === 0;
+             // Verify the TODO list is empty
+             expect(await todopage.getTodosEmptyCount()); 
+            
         });
+
+
 
         
 

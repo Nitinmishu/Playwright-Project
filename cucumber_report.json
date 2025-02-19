@@ -1,0 +1,483 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "todomvc-app;add-a-new-todo-and-verify-it-is-added-and-deleted",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Add a new TODO and verify it is added and deleted",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1963056459
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I add a new todo \"Meeting John at 3:30 GMT\"",
+            "match": {
+              "location": "features/step_definations/steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43195709
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I should see the todo \"Meeting John at 3:30 GMT\"",
+            "match": {
+              "location": "features/step_definations/steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7757124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I delete the todo \"Meeting John at 3:30 GMT\"",
+            "match": {
+              "location": "features/step_definations/steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 565742125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the todo list should be empty",
+            "match": {
+              "location": "features/step_definations/steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11074958
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 296108083
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todomvc-app;add-multiple-todos-and-verify-they-are-displayed",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Add multiple todos and verify they are displayed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1748255208
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Todo Item"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "start learning Java"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Makes Presentation for the Review"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Add the new Scenario before tomorrow"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I add the following todos:",
+            "match": {
+              "location": "features/step_definations/steps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48231958
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Todo Item"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "start learning Java"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Makes Presentation for the Review"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Add the new Scenario before tomorrow"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see the following todos:",
+            "match": {
+              "location": "features/step_definations/steps.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7469540
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "The active todo count should be 3",
+            "match": {
+              "location": "features/step_definations/steps.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1743916
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 283701250
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todomvc-app;mark-a-todo-as-complete-and-delete-it",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Mark a todo as complete and delete it",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1854092708
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I add a new todo \"Start reading a new Book\"",
+            "match": {
+              "location": "features/step_definations/steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29121959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I mark the todo \"Start reading a new Book\" as complete",
+            "match": {
+              "location": "features/step_definations/steps.js:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15544416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "the active todo count should be 0",
+            "match": {
+              "location": "features/step_definations/steps.js:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1537207
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "I delete all todos",
+            "match": {
+              "location": "features/step_definations/steps.js:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 580357791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "the todo list should be empty",
+            "match": {
+              "location": "features/step_definations/steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5152250
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 285750583
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todomvc-app;delete-todos-one-by-one",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "Delete todos one by one",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1634820458
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Todo Item"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "start learning Java"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Makes Presentation for the Review"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Add the new Scenario before tomorrow"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 35,
+            "name": "I add the following todos:",
+            "match": {
+              "location": "features/step_definations/steps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46295291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "the active todo count should be 3",
+            "match": {
+              "location": "features/step_definations/steps.js:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1606292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "I delete all todos",
+            "match": {
+              "location": "features/step_definations/steps.js:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1675478959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "the todo list should be empty",
+            "match": {
+              "location": "features/step_definations/steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5745833
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 320115707
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todomvc-app;clear-completed-todos",
+        "keyword": "Scenario Outline",
+        "line": 53,
+        "name": "Clear completed todos",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2294925665
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 46,
+            "name": "I add a new todo \"Add the new Scenario before tomorrow\"",
+            "match": {
+              "location": "features/step_definations/steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35377540
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "I mark the todo \"Add the new Scenario before tomorrow\" as complete",
+            "match": {
+              "location": "features/step_definations/steps.js:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18608333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 48,
+            "name": "I clear completed todos",
+            "match": {
+              "location": "features/step_definations/steps.js:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47483250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 49,
+            "name": "the todo list should be empty",
+            "match": {
+              "location": "features/step_definations/steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1437291
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 267888249
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "todomvc-app",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "TodoMVC App",
+    "tags": [],
+    "uri": "features/Todo.feature"
+  }
+]

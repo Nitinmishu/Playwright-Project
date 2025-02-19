@@ -1,6 +1,7 @@
 const { expect } = require('@playwright/test');
 class PageTodo {
     constructor(page) {
+        //Selectors
         this.page = page;
         this.todoInput = page.locator('.new-todo');
         this.todoList = page.locator('.todo-list li');
@@ -8,9 +9,7 @@ class PageTodo {
         this.todoDestroy = page.locator('.todo-list li .destroy');
         this.todoCount = page.locator('.todo-count');
         this.clearCompleted = page.locator('.clear-completed');
-        //this.filterAll = 'text=All';
-        //this.filterActive = 'text=Active';
-       // this.filterCompleted = 'text=Completed';
+        
     }
 
     async goto() {
@@ -76,6 +75,8 @@ await toggle.check(); // Check the toggle to mark as completed
 async clearCompletedItem() {
     await this.clearCompleted.click();
 }
+
+
 
 }
 module.exports = { PageTodo };
