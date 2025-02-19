@@ -11,6 +11,12 @@ git clone - https://github.com/Nitinmishu/Playwright-Project.git
 
 npm install
 
+Run the following command to install Playwright, Cucumber, and related tools:
+
+npm init -y  # Initialize package.json if not done
+npm install --save-dev @playwright/test @cucumber/cucumber playwright chai
+
+
 3. Run Tests
 
 Run tests in Chromium (default)
