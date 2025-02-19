@@ -22,11 +22,11 @@ npm install --save-dev @playwright/test @cucumber/cucumber playwright chai
 
 Run tests in Chromium (default)
 
-npm test
+npm run test
 
 4. Run tests in Firefox
 
-BROWSER=firefox npm test
+BROWSER=firefox npm run test
 
 🚀 Test Execution
 
