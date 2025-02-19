@@ -4,8 +4,8 @@ Playwright + Cucumber Todo App Test
 
 1. Clone the Repository
 
-git clone <repository-url>
-cd <repository-folder>
+git clone - https://github.com/Nitinmishu/Playwright-Project.git
+cd Playwright-Project
 
 2. Install Dependencies
 
