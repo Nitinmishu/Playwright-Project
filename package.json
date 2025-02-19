@@ -2,7 +2,7 @@
   "name": "playwright-auotmation-todo",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {"test": "npx cucumber-js --format json:cucumber_report.json && node report.js"},
+  "scripts": {"test": "npx cucumber-js --format json:cucumber_report.json"},
   "keywords": [],
   "author": "",
   "license": "ISC",
