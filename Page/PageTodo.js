@@ -50,7 +50,11 @@ await toggle.check(); // Check the toggle to mark as completed
  // Get the count of active todos
  async getActiveTodoCount() {
     const countText = await this.todoCount.innerText(); // Get the text inside the <strong> tag
-    return parseInt(countText, 10); // Convert the text to a number
+    const count = parseInt(countText, 10); // Convert the text to a number
+    if (isNaN(count)) {
+        throw new Error(`Unable to parse todo count from text: "${countText}"`);
+    }
+    return count;
 }
 
  // Delete all todos one by one
@@ -67,9 +71,11 @@ await toggle.check(); // Check the toggle to mark as completed
 
         // Click the destroy button
         await todoItem.locator('.destroy').click();
-
+        // Wait briefly to allow for UI updates
+    
         // Wait for the todo item to be removed
-        await this.page.waitForTimeout(500); // Optional: Add a small delay for stability
+        await this.page.waitForLoadState('networkidle', { timeout: 5000 });
+        
     }
 }
 async clearCompletedItem() {

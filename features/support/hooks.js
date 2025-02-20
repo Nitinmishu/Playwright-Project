@@ -6,6 +6,7 @@ const { chromium,firefox } = require('playwright');
 
 
 setDefaultTimeout(30000); // Set global timeout to 30 seconds
+
 // Select the browser type from an environment variable (default to Chromium)
 const browserType = process.env.BROWSER === 'firefox' ? firefox : chromium;
 
@@ -20,9 +21,8 @@ Before(async function () {
     await this.todopage.goto(); // Open the Todo app before each test
     await this.page.waitForLoadState('load'); // Ensure page is fully loaded
     await expect(this.page).toHaveTitle("TodoMVC: React");
-    // Run tests for this browser before launching the next
     
-   
+
     console.log(`✅ ${browserType.name()} Browser launched, Todo Test loaded successfully.`);
     
     
