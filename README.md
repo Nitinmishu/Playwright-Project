@@ -24,6 +24,7 @@ Run tests in Chromium (default)
 
 npm run test
 
+
 4. Run tests in Firefox
 
 BROWSER=firefox npm run test
@@ -37,6 +38,7 @@ Launch the specified browser (Chromium by default, or Firefox if specified).
 Open the Todo site 
 
 Perform test actions (add/delete todos, verify functionality).
+
 
 Close the browser after execution.
 
