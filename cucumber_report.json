@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2300655292
+              "duration": 1894890291
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 46595250
+              "duration": 36354041
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 5,
             "name": "I should see the todo \"Meeting John at 3:30 GMT\"",
             "match": {
-              "location": "features/step_definations/steps.js:18"
+              "location": "features/step_definations/steps.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 7778124
+              "duration": 7597958
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 6,
             "name": "I delete the todo \"Meeting John at 3:30 GMT\"",
             "match": {
-              "location": "features/step_definations/steps.js:25"
+              "location": "features/step_definations/steps.js:27"
             },
             "result": {
               "status": "passed",
-              "duration": 1321252124
+              "duration": 1195214250
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 7,
             "name": "the todo list should be empty",
             "match": {
-              "location": "features/step_definations/steps.js:30"
+              "location": "features/step_definations/steps.js:32"
             },
             "result": {
               "status": "passed",
-              "duration": 5089625
+              "duration": 4171625
             }
           },
           {
@@ -74,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 303897250
+              "duration": 332212000
             }
           }
         ],
@@ -93,7 +93,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2138790082
+              "duration": 1941990541
             }
           },
           {
@@ -127,11 +127,11 @@
             "line": 13,
             "name": "I add the following todos:",
             "match": {
-              "location": "features/step_definations/steps.js:40"
+              "location": "features/step_definations/steps.js:42"
             },
             "result": {
               "status": "passed",
-              "duration": 48705584
+              "duration": 49861291
             }
           },
           {
@@ -165,11 +165,11 @@
             "line": 18,
             "name": "I should see the following todos:",
             "match": {
-              "location": "features/step_definations/steps.js:48"
+              "location": "features/step_definations/steps.js:51"
             },
             "result": {
               "status": "passed",
-              "duration": 7430583
+              "duration": 7358709
             }
           },
           {
@@ -178,11 +178,11 @@
             "line": 23,
             "name": "The active todo count should be 3",
             "match": {
-              "location": "features/step_definations/steps.js:57"
+              "location": "features/step_definations/steps.js:60"
             },
             "result": {
               "status": "passed",
-              "duration": 1950958
+              "duration": 1975000
             }
           },
           {
@@ -190,7 +190,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 261035708
+              "duration": 279293915
             }
           }
         ],
@@ -209,7 +209,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1852809207
+              "duration": 1776616291
             }
           },
           {
@@ -222,7 +222,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35161541
+              "duration": 33749499
             }
           },
           {
@@ -231,11 +231,11 @@
             "line": 28,
             "name": "I mark the todo \"Start reading a new Book\" as complete",
             "match": {
-              "location": "features/step_definations/steps.js:65"
+              "location": "features/step_definations/steps.js:68"
             },
             "result": {
               "status": "passed",
-              "duration": 19413667
+              "duration": 18490167
             }
           },
           {
@@ -244,11 +244,11 @@
             "line": 29,
             "name": "the active todo count should be 0",
             "match": {
-              "location": "features/step_definations/steps.js:71"
+              "location": "features/step_definations/steps.js:74"
             },
             "result": {
               "status": "passed",
-              "duration": 28779375
+              "duration": 1489665
             }
           },
           {
@@ -257,11 +257,11 @@
             "line": 30,
             "name": "I delete all todos",
             "match": {
-              "location": "features/step_definations/steps.js:77"
+              "location": "features/step_definations/steps.js:80"
             },
             "result": {
               "status": "passed",
-              "duration": 1347618542
+              "duration": 1145662583
             }
           },
           {
@@ -270,11 +270,11 @@
             "line": 31,
             "name": "the todo list should be empty",
             "match": {
-              "location": "features/step_definations/steps.js:30"
+              "location": "features/step_definations/steps.js:32"
             },
             "result": {
               "status": "passed",
-              "duration": 6092166
+              "duration": 4805625
             }
           },
           {
@@ -282,7 +282,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 301373082
+              "duration": 291988083
             }
           }
         ],
@@ -301,7 +301,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1727544875
+              "duration": 1496905457
             }
           },
           {
@@ -335,11 +335,11 @@
             "line": 35,
             "name": "I add the following todos:",
             "match": {
-              "location": "features/step_definations/steps.js:40"
+              "location": "features/step_definations/steps.js:42"
             },
             "result": {
               "status": "passed",
-              "duration": 46335791
+              "duration": 44540000
             }
           },
           {
@@ -348,11 +348,11 @@
             "line": 40,
             "name": "the active todo count should be 3",
             "match": {
-              "location": "features/step_definations/steps.js:71"
+              "location": "features/step_definations/steps.js:74"
             },
             "result": {
               "status": "passed",
-              "duration": 1475958
+              "duration": 1948999
             }
           },
           {
@@ -361,11 +361,11 @@
             "line": 41,
             "name": "I delete all todos",
             "match": {
-              "location": "features/step_definations/steps.js:77"
+              "location": "features/step_definations/steps.js:80"
             },
             "result": {
               "status": "passed",
-              "duration": 1351546250
+              "duration": 1434547957
             }
           },
           {
@@ -374,11 +374,11 @@
             "line": 42,
             "name": "the todo list should be empty",
             "match": {
-              "location": "features/step_definations/steps.js:30"
+              "location": "features/step_definations/steps.js:32"
             },
             "result": {
               "status": "passed",
-              "duration": 1470374
+              "duration": 1365541
             }
           },
           {
@@ -386,7 +386,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 291037707
+              "duration": 271471208
             }
           }
         ],
@@ -405,7 +405,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1577898417
+              "duration": 1755221625
             }
           },
           {
@@ -418,7 +418,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 32647833
+              "duration": 35958832
             }
           },
           {
@@ -427,11 +427,11 @@
             "line": 47,
             "name": "I mark the todo \"Add the new Scenario before tomorrow\" as complete",
             "match": {
-              "location": "features/step_definations/steps.js:65"
+              "location": "features/step_definations/steps.js:68"
             },
             "result": {
               "status": "passed",
-              "duration": 21712541
+              "duration": 15393000
             }
           },
           {
@@ -440,11 +440,11 @@
             "line": 48,
             "name": "I clear completed todos",
             "match": {
-              "location": "features/step_definations/steps.js:82"
+              "location": "features/step_definations/steps.js:85"
             },
             "result": {
               "status": "passed",
-              "duration": 37914708
+              "duration": 35409374
             }
           },
           {
@@ -453,11 +453,11 @@
             "line": 49,
             "name": "the todo list should be empty",
             "match": {
-              "location": "features/step_definations/steps.js:30"
+              "location": "features/step_definations/steps.js:32"
             },
             "result": {
               "status": "passed",
-              "duration": 1669583
+              "duration": 1410917
             }
           },
           {
@@ -465,7 +465,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 295659459
+              "duration": 269882375
             }
           }
         ],

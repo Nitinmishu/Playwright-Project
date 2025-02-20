@@ -8,7 +8,9 @@ const { chromium } = require('playwright');
 
   // Step Definition for adding a new Todo item
   When('I add a new todo {string}', async function (todoText) {
+    
     await this.todopage.addTodo(todoText); // Add TODO to the list
+    console.log(`Adding todo: ${todoText}`);
     
 
   });
@@ -41,6 +43,7 @@ const { chromium } = require('playwright');
         const todos = dataTable.rows().map(row => row[0]); // Extract first column
         for (const todo of todos) {
             await this.todopage.addTodo(todo);
+            console.log(`Adding todo: ${todo}`);
         }
     });
 
@@ -61,13 +64,13 @@ Then('The active todo count should be {int}', async function (expectedCount) {
  
 
 
-// Step tp mark Todo as Complete
+// Step to mark Todo as Complete
 When('I mark the todo {string} as complete', async function (todoItem) {
     await this.todopage.completeTodo(0);
     
 });
 
-//Step tp active count of todos
+//Step to active count of todos
 Then('the active todo count should be {int}', async function (expectedCount) {
     const actualCount = await this.todopage.getActiveTodoCount();
     expect(actualCount).toBe(expectedCount);
@@ -83,6 +86,7 @@ When('I clear completed todos', async function () {
     await this.todopage.clearCompletedItem();
 
 });
+
 
 
 
