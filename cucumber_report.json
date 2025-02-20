@@ -4,7 +4,7 @@
     "elements": [
       {
         "description": "",
-        "id": "todomvc-app;add-a-new-todo-and-verify-it-is-added-and-deleted",
+        "id": "todo-site;add-a-new-todo-and-verify-it-is-added-and-deleted",
         "keyword": "Scenario",
         "line": 3,
         "name": "Add a new TODO and verify it is added and deleted",
@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3453614999
+              "duration": 2388769208
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 45603208
+              "duration": 45001374
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7929458
+              "duration": 7921417
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 537908916
+              "duration": 585232750
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5546958
+              "duration": 5093542
             }
           },
           {
@@ -74,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 323804083
+              "duration": 306291708
             }
           }
         ],
@@ -83,7 +83,7 @@
       },
       {
         "description": "",
-        "id": "todomvc-app;add-multiple-todos-and-verify-they-are-displayed",
+        "id": "todo-site;add-multiple-todos-and-verify-they-are-displayed",
         "keyword": "Scenario",
         "line": 11,
         "name": "Add multiple todos and verify they are displayed",
@@ -93,7 +93,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1828400208
+              "duration": 1834501041
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 47722292
+              "duration": 45399542
             }
           },
           {
@@ -165,11 +165,11 @@
             "line": 18,
             "name": "I should see the following todos:",
             "match": {
-              "location": "features/step_definations/steps.js:47"
+              "location": "features/step_definations/steps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 7593875
+              "duration": 6980625
             }
           },
           {
@@ -178,11 +178,11 @@
             "line": 23,
             "name": "The active todo count should be 3",
             "match": {
-              "location": "features/step_definations/steps.js:56"
+              "location": "features/step_definations/steps.js:57"
             },
             "result": {
               "status": "passed",
-              "duration": 1756166
+              "duration": 1883624
             }
           },
           {
@@ -190,7 +190,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 287545583
+              "duration": 289935875
             }
           }
         ],
@@ -199,7 +199,7 @@
       },
       {
         "description": "",
-        "id": "todomvc-app;mark-a-todo-as-complete-and-delete-it",
+        "id": "todo-site;mark-a-todo-as-complete-and-delete-it",
         "keyword": "Scenario",
         "line": 26,
         "name": "Mark a todo as complete and delete it",
@@ -209,7 +209,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1587790583
+              "duration": 1534739166
             }
           },
           {
@@ -222,7 +222,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33790082
+              "duration": 31203582
             }
           },
           {
@@ -231,11 +231,11 @@
             "line": 28,
             "name": "I mark the todo \"Start reading a new Book\" as complete",
             "match": {
-              "location": "features/step_definations/steps.js:64"
+              "location": "features/step_definations/steps.js:65"
             },
             "result": {
               "status": "passed",
-              "duration": 21428917
+              "duration": 57737834
             }
           },
           {
@@ -244,11 +244,11 @@
             "line": 29,
             "name": "the active todo count should be 0",
             "match": {
-              "location": "features/step_definations/steps.js:69"
+              "location": "features/step_definations/steps.js:71"
             },
             "result": {
               "status": "passed",
-              "duration": 1439749
+              "duration": 1886249
             }
           },
           {
@@ -257,11 +257,11 @@
             "line": 30,
             "name": "I delete all todos",
             "match": {
-              "location": "features/step_definations/steps.js:74"
+              "location": "features/step_definations/steps.js:77"
             },
             "result": {
               "status": "passed",
-              "duration": 548015542
+              "duration": 543496042
             }
           },
           {
@@ -274,7 +274,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5217916
+              "duration": 2340709
             }
           },
           {
@@ -282,7 +282,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 286312291
+              "duration": 293086333
             }
           }
         ],
@@ -291,7 +291,7 @@
       },
       {
         "description": "",
-        "id": "todomvc-app;delete-todos-one-by-one",
+        "id": "todo-site;delete-todos-one-by-one",
         "keyword": "Scenario",
         "line": 34,
         "name": "Delete todos one by one",
@@ -301,7 +301,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1648848375
+              "duration": 1925448916
             }
           },
           {
@@ -339,7 +339,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 46588083
+              "duration": 42352249
             }
           },
           {
@@ -348,11 +348,11 @@
             "line": 40,
             "name": "the active todo count should be 3",
             "match": {
-              "location": "features/step_definations/steps.js:69"
+              "location": "features/step_definations/steps.js:71"
             },
             "result": {
               "status": "passed",
-              "duration": 1345541
+              "duration": 1481667
             }
           },
           {
@@ -361,11 +361,11 @@
             "line": 41,
             "name": "I delete all todos",
             "match": {
-              "location": "features/step_definations/steps.js:74"
+              "location": "features/step_definations/steps.js:77"
             },
             "result": {
               "status": "passed",
-              "duration": 1653482582
+              "duration": 1660829332
             }
           },
           {
@@ -378,7 +378,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5207833
+              "duration": 3222624
             }
           },
           {
@@ -386,7 +386,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 294344874
+              "duration": 284341416
             }
           }
         ],
@@ -395,7 +395,7 @@
       },
       {
         "description": "",
-        "id": "todomvc-app;clear-completed-todos",
+        "id": "todo-site;clear-completed-todos",
         "keyword": "Scenario Outline",
         "line": 53,
         "name": "Clear completed todos",
@@ -405,7 +405,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2017314416
+              "duration": 2036701834
             }
           },
           {
@@ -418,7 +418,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35165374
+              "duration": 31237250
             }
           },
           {
@@ -427,11 +427,11 @@
             "line": 47,
             "name": "I mark the todo \"Add the new Scenario before tomorrow\" as complete",
             "match": {
-              "location": "features/step_definations/steps.js:64"
+              "location": "features/step_definations/steps.js:65"
             },
             "result": {
               "status": "passed",
-              "duration": 19019707
+              "duration": 17894583
             }
           },
           {
@@ -440,11 +440,11 @@
             "line": 48,
             "name": "I clear completed todos",
             "match": {
-              "location": "features/step_definations/steps.js:79"
+              "location": "features/step_definations/steps.js:82"
             },
             "result": {
               "status": "passed",
-              "duration": 15147249
+              "duration": 38489499
             }
           },
           {
@@ -457,7 +457,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1142916
+              "duration": 1206250
             }
           },
           {
@@ -465,7 +465,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 257270749
+              "duration": 287420834
             }
           }
         ],
@@ -473,10 +473,10 @@
         "type": "scenario"
       }
     ],
-    "id": "todomvc-app",
+    "id": "todo-site",
     "line": 1,
     "keyword": "Feature",
-    "name": "TodoMVC App",
+    "name": "Todo Site",
     "tags": [],
     "uri": "features/Todo.feature"
   }

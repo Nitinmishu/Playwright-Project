@@ -1,5 +1,5 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
-const { test,expect,playwright } = require('@playwright/test');
+const { test,expect } = require('@playwright/test');
 const { PageTodo } = require('../../Page/PageTodo');
 const { chromium } = require('playwright'); 
 
@@ -43,8 +43,9 @@ const { chromium } = require('playwright');
             await this.todopage.addTodo(todo);
         }
     });
-// Step to verify todos are displayed correctly
-Then('I should see the following todos:', async function (dataTable) {
+
+    // Step to verify todos are displayed correctly
+   Then('I should see the following todos:', async function (dataTable) {
     const expectedTodos = dataTable.rows().map(row => row[0]); // Extract first column
     const actualTodos = await this.todopage.getTodos(); // Get todos from UI
 
@@ -65,17 +66,19 @@ When('I mark the todo {string} as complete', async function (todoItem) {
     await this.todopage.completeTodo(0);
     
 });
+
 //Step tp active count of todos
 Then('the active todo count should be {int}', async function (expectedCount) {
     const actualCount = await this.todopage.getActiveTodoCount();
     expect(actualCount).toBe(expectedCount);
 });
+
 // steps to delete all the Todo Items
 When('I delete all todos', async function () {
     await this.todopage.deleteTodos();
 });
 
-
+// steps to clear the Todo Items
 When('I clear completed todos', async function () {
     await this.todopage.clearCompletedItem();
 

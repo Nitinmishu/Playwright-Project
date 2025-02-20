@@ -1,4 +1,4 @@
-Feature: TodoMVC App
+Feature: Todo Site
 
   Scenario: Add a new TODO and verify it is added and deleted
     When I add a new todo "Meeting John at 3:30 GMT"
