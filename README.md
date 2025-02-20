@@ -23,7 +23,8 @@ npm install --save-dev @playwright/test @cucumber/cucumber playwright chai
 Run tests in Chromium (default)
 
 npm run test
-
+or 
+npx cucumber-js --format html:cumber-report.html
 
 4. Run tests in Firefox
 
